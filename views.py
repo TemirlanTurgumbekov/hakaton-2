@@ -77,7 +77,7 @@ class UpdateMixin:
         try:
             obj[field] = new_info
             return {'status': '200 OK!', 'msg': obj}
-        except AttributeError:
+        except:
             return {'status': '404 Not Found!'} 
         
 class DeleteMixin:
